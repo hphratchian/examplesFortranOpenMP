@@ -18,7 +18,7 @@
 !     Start an OpenMP parallel block of code. Each OMP worker is going to write
 !     out a series of numbers and then tell us that it's done with its work.
 !
-!$OMP PARALLEL PRIVATE(threadNum)
+!$OMP PARALLEL PRIVATE(threadNum,i)
       threadNum = OMP_GET_THREAD_NUM()
       do i = 0,OMP_GET_MAX_THREADS()-1
         print *, 'threadNum,i: ',threadNum,i
