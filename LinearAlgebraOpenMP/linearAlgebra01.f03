@@ -4,6 +4,17 @@
 !     The matrices are square and their size is determined by a user-provided
 !     command line argument.
 !
+!     To execute the program use:
+!
+!       %> ./linearAlgebra01.exe _nDim_ _nProcs_
+!
+!     where _nDim_ gives the leading dimension size of the randomly filled
+!     arrays and _nProcs_ gives the number of processors/cores to use in OpenMP
+!     parallel blocks.
+!
+!     To compile the program using the nvidia fortran compiler, use:
+!       %> nvfortran -mp -o linearAlgebra01.exe linearAlgebra01.f03
+!
 !
 !     Hrant P. Hratchian, 2021.
 !
